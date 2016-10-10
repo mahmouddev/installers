@@ -14,7 +14,7 @@ class Installer extends LibraryInstaller
      * @var array
      */
     private $supportedTypes = array(
-        'yallagroup'       => 'AimeosInstaller',
+        'yallagroup'       => 'YallagroupInstaller',
     );
 
     /**
