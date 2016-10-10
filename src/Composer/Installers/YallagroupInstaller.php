@@ -1,5 +1,5 @@
 <?php
-namespace Mahmoudev\Installers;
+namespace Mahmouddev\Installers;
 
 class YallagroupInstaller extends BaseInstaller
 {
