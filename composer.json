@@ -1,0 +1,38 @@
+{
+    "name": "Mahmouddev/installers",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "description": "A yallagroup system installer",
+    "keywords": [
+        "installer"
+    ],
+    "authors": [
+        {
+            "name": "Mahmoud abdelmoniem",
+            "email": "mogahead@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Mahmouddev\\Installers\\": "src/Composer/Installers" }
+    },
+    "extra": {
+        "class": "Mahmouddev\\Installers\\Plugin",
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "replace": {
+        "shama/baton": "*",
+        "roundcube/plugin-installer": "*"
+    },
+    "require": {
+        "composer-plugin-api": "^1.0"
+    },
+    "require-dev": {
+        "composer/composer": "1.0.*@dev",
+        "phpunit/phpunit": "4.1.*"
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
