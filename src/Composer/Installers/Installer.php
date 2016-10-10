@@ -31,7 +31,7 @@ class Installer extends LibraryInstaller
             );
         }
 
-        $class = 'Composer\\Installers\\' . $this->supportedTypes[$frameworkType];
+        $class = 'Mahmouddev\\Installers\\' . $this->supportedTypes[$frameworkType];
         $installer = new $class($package, $this->composer, $this->getIO());
 
         return $installer->getInstallPath($package, $frameworkType);
