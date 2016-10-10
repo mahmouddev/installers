@@ -1,5 +1,5 @@
 {
-    "name": "Mahmouddev/installers",
+    "name": "mahmouddev/installers",
     "type": "composer-plugin",
     "license": "MIT",
     "description": "A yallagroup system installer",
