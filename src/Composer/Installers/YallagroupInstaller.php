@@ -7,7 +7,7 @@ class YallagroupInstaller extends BaseInstaller
 		'module' => 'Modules/{$name}/',
 		'theme'  => 'public/themes/{$name}/',
     );
-
+    
     /**
      * Format package name.
      *
@@ -41,8 +41,8 @@ class YallagroupInstaller extends BaseInstaller
     protected function inflectThemeVars($vars)
     {
         $vars['name'] = preg_replace('/-theme$/', '', $vars['name']);
-        $vars['name'] = str_replace(array('-', '_'), ' ', $vars['name']);
-        $vars['name'] = str_replace(' ', '', ucwords($vars['name']));
+        $path = str_replace('-', '/', $vars['name']);
+        $vars['name'] = $path;
 
         return $vars;
     }
